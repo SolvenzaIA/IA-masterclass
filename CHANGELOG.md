@@ -8,13 +8,14 @@ Todas las modificaciones notables de este proyecto se documentan en este archivo
 - Conexión de la herramienta MCP a VS Code mediante `.vscode/mcp.json`.
 - Guía interactiva descargable `docs/preparacion.html` compilada como página multipágina en Vite para su publicación en GitHub Pages.
 - Plantilla segura `.env.example` y soporte de secretos `${{ secrets.NOMBRE }}` en Continue (`config.yaml`).
-- Configuración multimodelo completa en Continue con Groq (`qwen/qwen3.8-27b`), Gemini 3.8 Flash y modelos especializados libres de OpenRouter (Nemotron Ultra, North Mini Code, Flint, Nemotron Super VL y Nemotron Lightning).
-- Enlace de contacto y soporte técnico directo (`info@enriqueteruel.com`) en `config.json`, `preparacion.html` y `preparacion.md`.
+- Configuración multimodelo en Continue optimizada para modelos abiertos con Groq (`qwen/qwen3.8-27b`) y modelos especializados libres de OpenRouter (Nemotron Ultra, North Mini Code, Flint, Nemotron Super VL y Nemotron Lightning).
+- Clarificación de Google Antigravity como IDE completo descargable para experimentar con Gemini 3.8 Flash de forma nativa e integrada sin claves API.
+- Enlace de contacto y soporte técnico directo (`info@enriqueteruel.com`) en `config.json`, `preparacion.html` y `README.md`.
 
 ### Modificado
 - `vite.config.js` actualizado para emitir tanto `index.html` como `docs/preparacion.html` en el build de producción.
-- `README.md` restaurado y actualizado con las 4 dimensiones de aprendizaje (Data, Prompts, Skills, Tools MCP).
-- Coherencia total de etiquetas: Copilot como **Obligatorio**, Google Antigravity como **Recomendado**, y Continue / Groq / OpenRouter como **Opcional**.
+- `README.md` actualizado con las 4 dimensiones de aprendizaje (Data, Prompts, Skills, Tools MCP) e instrucciones detalladas para el IDE Antigravity.
+- Coherencia total de etiquetas: Copilot como **Obligatorio**, Google Antigravity IDE como **Recomendado**, y Continue / Groq / OpenRouter como **Opcional**.
 
 ### Corregido
 - Eliminadas rutas a carpetas y archivos obsoletos (`.gemini/`, `.mcp.json`, `docs/auditoria-manual.md`).

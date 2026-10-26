@@ -899,7 +899,7 @@
           </li>
           <li>
             <a href="#antigravity" class="toc-link"
-              >02. Google Antigravity (Recomendado)</a
+              >02. Google Antigravity IDE (Recomendado)</a
             >
           </li>
           <li>
@@ -1222,15 +1222,15 @@
         <section class="section-block" id="antigravity">
           <div class="section-head">
             <span class="section-index">02</span>
-            <h2>Google Antigravity (Recomendado · Gemini 3.8 Flash)</h2>
+            <h2>Descargar e instalar Google Antigravity IDE (Recomendado · Gemini 3.8 Flash)</h2>
           </div>
           <p class="section-desc">
             <strong>Paso recomendado:</strong> Google Antigravity es el nuevo
-            entorno de desarrollo potenciado por agentes de Google. Te permite
-            probar y consultar <strong>Gemini 3.8 Flash</strong> directamente en
-            la web sin necesidad de configurar claves en extensiones locales.
-            Si además deseas usar Gemini dentro de Continue en VS Code, puedes
-            añadir tu <code>GEMINI_API_KEY</code> en tu archivo <code>.env</code>.
+            <strong>IDE de desarrollo potenciado por agentes de Google</strong>.
+            A diferencia de extensiones tradicionales, aquí no utilizaremos
+            claves API (ya que Gemini no cuenta con CLI ni integración fluida en
+            tier gratuito para herramientas externas); Gemini 3.8 Flash funciona
+            de forma nativa dentro de la propia aplicación.
           </p>
 
           <div class="step-table-wrap">
@@ -1245,45 +1245,37 @@
               <tbody>
                 <tr>
                   <td class="col-num"><span class="step-tag">01</span></td>
-                  <td class="col-action">Acceder al portal</td>
+                  <td class="col-action">Descargar el IDE</td>
                   <td class="col-detail">
-                    Entra en la plataforma oficial de Google:
+                    Entra en la web oficial
                     <a
                       href="https://antigravity.google/"
                       target="_blank"
                       rel="noopener"
                       ><strong>antigravity.google</strong></a
-                    >.
+                    >
+                    y descarga el instalador de <strong>Google Antigravity</strong> para tu sistema operativo (Mac, Windows o Linux).
                   </td>
                 </tr>
                 <tr>
                   <td class="col-num"><span class="step-tag">02</span></td>
-                  <td class="col-action">Iniciar sesión</td>
+                  <td class="col-action">Instalar la aplicación</td>
                   <td class="col-detail">
-                    Identifícate con tu cuenta habitual de
-                    <strong>Google / Gmail</strong>.
+                    Ejecuta el archivo descargado e instala el IDE en tu ordenador siguiendo las instrucciones habituales.
                   </td>
                 </tr>
                 <tr>
                   <td class="col-num"><span class="step-tag">03</span></td>
-                  <td class="col-action">Descubrir Gemini 3.8 Flash</td>
+                  <td class="col-action">Iniciar sesión con Google</td>
                   <td class="col-detail">
-                    En el catálogo de modelos, explora
-                    <a
-                      href="https://antigravity.google/blog/gemini-3-8-flash-in-google-antigravity"
-                      target="_blank"
-                      rel="noopener"
-                      ><strong>Gemini 3.8 Flash</strong></a
-                    >, el modelo optimizado para asistencia al desarrollo y
-                    agentes.
+                    Abre <strong>Antigravity</strong> e inicia sesión directamente con tu cuenta personal de <strong>Google / Gmail</strong>.
                   </td>
                 </tr>
                 <tr>
                   <td class="col-num"><span class="step-tag">04</span></td>
-                  <td class="col-action">Uso en la sesión</td>
+                  <td class="col-action">Listo sin claves API</td>
                   <td class="col-detail">
-                    Durante la masterclass veremos cómo interactuar con Gemini
-                    3.8 Flash desde Antigravity como alternativa autónoma.
+                    ¡Todo preparado! <strong>Gemini 3.8 Flash</strong> estará disponible de forma nativa e integrada en el editor para generar código y razonar con agentes durante la masterclass.
                   </td>
                 </tr>
               </tbody>
@@ -1523,9 +1515,8 @@
                   <td class="col-detail">
                     <strong>No pegues claves en el YAML.</strong> En la raíz del
                     proyecto, duplica <code>.env.example</code> como
-                    <code>.env</code> y rellena <code>GROQ_API_KEY</code>,
-                    <code>OPENROUTER_API_KEY</code> y, si la tienes,
-                    <code>GEMINI_API_KEY</code>. Continue las lee
+                    <code>.env</code> y rellena <code>GROQ_API_KEY</code> y
+                    <code>OPENROUTER_API_KEY</code>. Continue las lee
                     automáticamente gracias a
                     <code>${{ secrets.NOMBRE }}</code>. Una sola clave de
                     OpenRouter sirve para todos sus modelos.
@@ -1562,15 +1553,6 @@
       - chat
       - edit
       - apply
-  - <span class="syn-key">name:</span> <span class="syn-val">Gemini 3.8 Flash</span>
-    <span class="syn-key">provider:</span> gemini
-    <span class="syn-key">model:</span> <span class="syn-val">gemini-3.8-flash</span>
-    <span class="syn-key">apiKey:</span> <span class="syn-str">${{ secrets.GEMINI_API_KEY }}</span>  <span class="syn-com"># Se lee de tu archivo .env</span>
-    <span class="syn-key">contextLength:</span> <span class="syn-num">1048576</span>
-    <span class="syn-key">defaultCompletionOptions:</span>
-      <span class="syn-key">maxTokens:</span> <span class="syn-num">65536</span>
-    <span class="syn-key">capabilities:</span>
-      - tool_use
 
   <span class="syn-com"># Razonamiento y agentes complejos</span>
   - <span class="syn-key">name:</span> <span class="syn-val">Nemotron 3 Ultra - Free</span>
@@ -1771,12 +1753,12 @@
                   <td><strong>Google Antigravity</strong></td>
                   <td>
                     <span style="font-weight: 700; color: #0f172a"
-                      >Recomendado · Exploración web</span
+                      >Recomendado · IDE de Google</span
                     >
                   </td>
                   <td>Google Gemini (<code>gemini-3.8-flash</code>)</td>
                   <td>
-                    Cuenta de Google en
+                    Descargar e instalar el IDE en
                     <a
                       href="https://antigravity.google/"
                       target="_blank"
@@ -1832,10 +1814,10 @@
             </div>
             <p class="callout-body">
               Con tener al menos
-              <strong>una de las opciones activas</strong> (Copilot con tu
-              cuenta de GitHub, Google Antigravity en el navegador, o Continue
-              con Groq/OpenRouter) podrás realizar todos los ejercicios
-              prácticos del taller.
+              <strong>una de las opciones activas</strong> (Copilot en VS Code,
+              el IDE Antigravity con tu cuenta de Google, o Continue con
+              Groq/OpenRouter) podrás realizar todos los ejercicios prácticos
+              del taller.
             </p>
           </div>
         </section>
@@ -1894,15 +1876,6 @@ models:
       - chat
       - edit
       - apply
-  - name: Gemini 3.8 Flash
-    provider: gemini
-    model: gemini-3.8-flash
-    apiKey: \${{ secrets.GEMINI_API_KEY }}
-    contextLength: 1048576
-    defaultCompletionOptions:
-      maxTokens: 65536
-    capabilities:
-      - tool_use
 
   # Razonamiento y agentes complejos
   - name: Nemotron 3 Ultra - Free

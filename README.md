@@ -54,14 +54,14 @@ GitHub Copilot es el asistente oficial de GitHub integrado en el editor.
 
 ---
 
-## 2️⃣ Explorar Google Antigravity y Gemini 3.8 Flash (Recomendado)
+## 2️⃣ Descargar e instalar Google Antigravity IDE (Recomendado)
 
-**Paso recomendado:** Para experimentar de forma interactiva con el modelo insignia de Google, puedes acceder a **Google Antigravity**:
+**Paso recomendado:** Google Antigravity es el nuevo **IDE de desarrollo potenciado por agentes de Google**. Te permite programar y experimentar con **Gemini 3.8 Flash** de forma nativa e integrada:
 
-1. Entra en la plataforma web oficial de Google: 👉 **[antigravity.google](https://antigravity.google/)**.
-2. Inicia sesión con tu cuenta habitual de **Google / Gmail**.
-3. En el catálogo interactivo de modelos y agentes, explora [**Gemini 3.8 Flash**](https://antigravity.google/blog/gemini-3-8-flash-in-google-antigravity).
-4. Podrás usarlo directamente en el navegador para consultas de arquitectura, prompts complejos y generación conceptual sin configurar claves locales (si además quieres usarlo en Continue dentro de VS Code, puedes añadir tu `GEMINI_API_KEY` en tu archivo `.env`).
+1. Entra en la web oficial: 👉 **[antigravity.google](https://antigravity.google/)**.
+2. **Descarga el instalador del IDE** para tu sistema operativo (Mac, Windows o Linux) e instálalo.
+3. Abre el **IDE de Antigravity** e inicia sesión con tu cuenta habitual de **Google / Gmail**.
+4. **No necesitas configurar ninguna API Key:** Gemini 3.8 Flash viene preintegrado dentro del IDE para trabajar con agentes y código sin requerir CLI ni lidiar con las limitaciones del free tier en herramientas externas.
 
 ---
 
@@ -120,15 +120,6 @@ models:
       - chat
       - edit
       - apply
-  - name: Gemini 3.8 Flash
-    provider: gemini
-    model: gemini-3.8-flash
-    apiKey: ${{ secrets.GEMINI_API_KEY }} # Se lee de tu archivo .env
-    contextLength: 1048576
-    defaultCompletionOptions:
-      maxTokens: 65536
-    capabilities:
-      - tool_use
 
   # Razonamiento y agentes complejos
   - name: Nemotron 3 Ultra - Free
@@ -205,7 +196,7 @@ context:
   - provider: codebase
 ```
 
-3. **No pegues las claves en el YAML.** En la raíz del proyecto, duplica `.env.example` como `.env` y rellena `GROQ_API_KEY`, `OPENROUTER_API_KEY` y, si la tienes, `GEMINI_API_KEY`. Continue las lee automáticamente con `${{ secrets.NOMBRE }}` (una sola clave de OpenRouter sirve para todos sus modelos). `.env` está en `.gitignore`, así que nunca se sube a GitHub.
+3. **No pegues las claves en el YAML.** En la raíz del proyecto, duplica `.env.example` como `.env` y rellena `GROQ_API_KEY` y `OPENROUTER_API_KEY`. Continue las lee automáticamente con `${{ secrets.NOMBRE }}` (una sola clave de OpenRouter sirve para todos sus modelos). `.env` está en `.gitignore`, así que nunca se sube a GitHub.
 
 ### Opción B (Alternativa): Configurar mediante el asistente visual
 
@@ -231,11 +222,11 @@ Para comprobar que todo funciona antes de la clase:
 | Herramienta               | Tipo                              | Proveedor / Modelos                 | ¿Qué necesitas?                                                                        |
 | :------------------------ | :-------------------------------- | :---------------------------------- | :------------------------------------------------------------------------------------- |
 | **GitHub Copilot**        | **Obligatorio**                   | GitHub / Microsoft                  | Iniciar sesión con tu cuenta de GitHub en VS Code                                      |
-| **Google Antigravity**    | **Recomendado** · Exploración web | Google Gemini (`gemini-3.8-flash`)  | Cuenta de Google en [antigravity.google](https://antigravity.google/)                  |
+| **Google Antigravity**    | **Recomendado** · IDE de Google   | Google Gemini (`gemini-3.8-flash`)  | Descargar e instalar el IDE en [antigravity.google](https://antigravity.google/)       |
 | **Continue + Groq**       | Opcional · Más tokens             | Groq (`qwen/qwen3.8-27b`)           | API Key gratuita en [console.groq.com/keys](https://console.groq.com/keys)             |
 | **Continue + OpenRouter** | Opcional · Más tokens             | OpenRouter (modelos free de código) | API Key gratuita en [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys) |
 
-Con tener al menos **una de las opciones activas** (Copilot con tu cuenta de GitHub, Google Antigravity en la web o Continue con Groq/OpenRouter) podrás realizar todos los ejercicios prácticos de la sesión.
+Con tener al menos **una de las opciones activas** (Copilot en VS Code, el IDE Antigravity con tu cuenta de Google, o Continue con Groq/OpenRouter) podrás realizar todos los ejercicios prácticos de la sesión.
 
 ---
 
