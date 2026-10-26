@@ -14,7 +14,7 @@ Todas las modificaciones notables de este proyecto se documentan en este archivo
 
 ### Modificado
 - `vite.config.js` actualizado para emitir tanto `index.html` como `docs/preparacion.html` en el build de producción.
-- `README.md` actualizado con las 4 dimensiones de aprendizaje (Data, Prompts, Skills, Tools MCP) e instrucciones detalladas para el IDE Antigravity.
+- `README.md`, `docs/preparacion.html`, `tools/README.md` y `src/data/config.json` depurados de fórmulas y muletillas lingüísticas artificiales (eliminación de vaguedades como "ecosistemas digitales" o metáforas grandilocuentes, eliminación de emojis superfluos y redacción técnica directa).
 - Coherencia total de etiquetas: Copilot como **Obligatorio**, Google Antigravity IDE como **Recomendado**, y Continue / Groq / OpenRouter como **Opcional**.
 
 ### Corregido

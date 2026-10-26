@@ -834,7 +834,7 @@
     <header class="site-nav">
       <div class="site-nav-inner">
         <div class="brand">
-          <span>Masterclass Vibe Coding</span>
+          <span>Masterclass de IA</span>
           <span class="brand-badge">PREPARACIÓN</span>
         </div>
         <div class="nav-actions">
@@ -947,22 +947,20 @@
 
       <!-- Contenido central con tablas estéticas de pasos -->
       <main class="content" id="main-content">
-        <span class="eyebrow">Fase 1 · Preparación previa</span>
+        <span class="eyebrow">Preparación previa</span>
         <h1>Guía de preparación del entorno</h1>
         <p class="lead-text">
-          Lo <strong>único obligatorio</strong> para participar en la
-          masterclass es tener instalado <strong>Visual Studio Code</strong>,
-          contar con una <strong>cuenta de GitHub</strong> y
+          Para realizar la sesión solo necesitas tener instalado
+          <strong>Visual Studio Code</strong>, contar con una cuenta de
+          <strong>GitHub</strong> y
           <strong>crear tu repositorio a partir de la plantilla oficial</strong>
           (<a
             href="https://github.com/SolvenzaIA/IA-masterclass"
             target="_blank"
             rel="noopener"
             >SolvenzaIA/IA-masterclass</a
-          >). Todo lo demás (Google Antigravity, Groq, OpenRouter y Continue) es
-          <strong>completamente opcional</strong> para disponer de más tokens y
-          modelos alternativos; no te preocupes si no lo configuras ahora,
-          <strong>se explicará en detalle durante la clase</strong>.
+          >). El resto de herramientas (Google Antigravity, Groq y OpenRouter)
+          son alternativas opcionales que veremos durante el taller.
         </p>
 
         <!-- SECCIÓN 00: REQUISITOS -->
@@ -1020,8 +1018,7 @@
               <span class="req-badge optional">OPCIONAL</span>
               <div class="req-title">Antigravity / Groq / OpenRouter</div>
               <p class="req-text">
-                Modelos y tokens adicionales para probar en directo.
-                <em>Se explicará en la clase.</em>
+                Modelos adicionales opcionales para probar durante la clase.
               </p>
             </div>
           </div>
@@ -1288,14 +1285,13 @@
           <div class="section-head">
             <span class="section-index">03</span>
             <h2>
-              Obtener claves API: Groq y OpenRouter (Opcional · Más tokens)
+              Obtener claves API: Groq y OpenRouter (Opcional)
             </h2>
           </div>
           <p class="section-desc">
-            Para alimentar la extensión <strong>Continue</strong> en tu editor
-            de código dispones de dos proveedores gratuitos con bolsas extra de
-            tokens: <strong>Groq</strong> (inferencia ultrarrápida) y
-            <strong>OpenRouter</strong> (pasarela multimodelo).
+            Si quieres probar modelos de código abiertos dentro de la extensión
+            <strong>Continue</strong>, puedes generar claves gratuitas en estos dos
+            proveedores:
           </p>
 
           <h3 id="groq-paso">
@@ -1323,7 +1319,7 @@
                       rel="noopener"
                       >console.groq.com</a
                     >
-                    y regístrate gratis con Google o GitHub en segundos.
+                    y crea una cuenta con Google o GitHub.
                   </td>
                 </tr>
                 <tr>
@@ -1415,16 +1411,12 @@
           <div class="section-head">
             <span class="section-index">04</span>
             <h2>
-              Instalar y configurar Continue (Opcional · Alternativa
-              multimodelo)
+              Instalar y configurar Continue (Opcional)
             </h2>
           </div>
           <p class="section-desc">
-            <strong>Paso opcional:</strong> Si quieres disponer de una
-            alternativa abierta para usar los tokens y modelos gratuitos de Groq
-            y OpenRouter, instala Continue en VS Code. Si vas a trabajar con
-            Copilot o con Google Antigravity en el navegador, puedes omitir este
-            paso (lo explicaremos en la sesión).
+            Si prefieres quedarte en VS Code pero quieres probar modelos de código
+            abiertos como Qwen o Nemotron, puedes instalar la extensión Continue.
           </p>
 
           <h3 id="continue-a">
@@ -1495,10 +1487,10 @@
                   <td class="col-num"><span class="step-tag">01</span></td>
                   <td class="col-action">Abrir configuración</td>
                   <td class="col-detail">
-                    En el panel de Continue, pulsa el icono de engranaje
-                    <strong>⚙️ Settings</strong> (o presiona
+                    En el panel de Continue, pulsa el icono de configuración
+                    (la rueda dentada) o presiona
                     <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> y
-                    escribe <code>Continue: Open config.yaml</code>).
+                    escribe <code>Continue: Open config.yaml</code>.
                   </td>
                 </tr>
                 <tr>
@@ -1686,10 +1678,10 @@
         <section class="section-block" id="verificacion">
           <div class="section-head">
             <span class="section-index">05</span>
-            <h2>Comprobación de funcionamiento («Hola Mundo»)</h2>
+            <h2>Comprobación final</h2>
           </div>
           <p class="section-desc">
-            Valida en 30 segundos que el asistente responde correctamente:
+            Comprueba que el asistente responde antes de la sesión:
           </p>
 
           <div class="step-table-wrap">
@@ -1704,15 +1696,14 @@
               <tbody>
                 <tr>
                   <td class="col-num"><span class="step-tag">01</span></td>
-                  <td class="col-action">Enviar mensaje de test</td>
+                  <td class="col-action">Enviar pregunta</td>
                   <td class="col-detail">
-                    En el chat de Copilot o Continue, escribe el siguiente
-                    mensaje de comprobación:
+                    En el chat de Copilot o Continue, escribe una consulta de prueba:
                     <div class="action-panel">
                       <div class="action-panel-top">
                         <span>Mensaje de prueba en el chat</span>
                       </div>
-                      <p class="action-panel-body">Hola mundo</p>
+                      <p class="action-panel-body">¿Qué archivos componen este proyecto?</p>
                     </div>
                   </td>
                 </tr>
@@ -1720,8 +1711,7 @@
                   <td class="col-num"><span class="step-tag">02</span></td>
                   <td class="col-action">Verificar respuesta</td>
                   <td class="col-detail">
-                    Si el asistente te responde en español saludándote
-                    cordialmente, tu entorno está 100% listo para la sesión.
+                    Si el asistente responde leyendo la estructura de carpetas del proyecto, la extensión está lista para usarse.
                   </td>
                 </tr>
               </tbody>
