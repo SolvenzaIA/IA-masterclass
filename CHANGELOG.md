@@ -2,6 +2,23 @@
 
 Todas las modificaciones notables de este proyecto se documentan en este archivo según la metodología [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
+## [Unreleased]
+
+### Modificado
+- Reorientado el diseño hacia la referencia visual: navegación compacta, portada editorial, acento coral y pie oscuro.
+- Ampliado el ancho máximo del contenido para reducir los márgenes laterales en escritorio y tablet.
+- Personalizados el perfil, las competencias, la ubicación y los enlaces de contacto con los datos proporcionados.
+- Retirados los proyectos ficticios y añadido un mensaje para la sección de proyectos vacía.
+- Actualizados los textos de la página para eliminar las referencias a la maqueta de demostración.
+
+### Añadido
+- Maqueta de portfolio de una página con navegación accesible, presentación, tarjetas de proyectos, competencias y contacto.
+- Renderizado dinámico desde los JSON, etiquetas para proyectos de ejemplo y diseño responsive con soporte para movimiento reducido.
+- Retrato proporcionado por la persona usuaria en la cabecera, con presentación adaptable y texto alternativo.
+
+### Modificado
+- Vaciado el email de contacto de la plantilla para evitar presentar el correo de soporte como un dato personal.
+
 ## [1.1.0] - 2026-10-26
 
 ### Añadido

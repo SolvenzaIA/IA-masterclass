@@ -3,12 +3,12 @@
 La captura `references/portfolio.png` es una **referencia estética**, no un modelo literal ni una fuente de datos personales. No reproduzcas su nombre, textos, enlaces ni proyectos.
 
 ## Diseño actual que debe preservarse
-- One-page con navegación superior, hero editorial, proyectos en tarjetas, competencias, contacto y footer.
-- Fondo blanco cálido `#f4f2f0`, tinta casi negra `#111111`, superficies en gris cálido.
-- Tipografía sans-serif, títulos grandes y contraste de tamaño marcado.
-- Dos columnas de tarjetas en escritorio; una en móvil.
-- Ilustración geométrica construida con CSS (sin imágenes de terceros).
-- Estados interactivos con foco visible y menú móvil desplegable.
+- One-page con navegación compacta, hero editorial en dos columnas, proyectos, competencias, contacto y footer.
+- Fondo cálido `#f0edec`, tinta casi negra `#111111`, superficies `#dedad8` y acento coral `#cc4528`.
+- Tipografía sans-serif, títulos grandes y composición despejada.
+- Retrato proporcionado por la persona participante en la cabecera; no usar imágenes de terceros.
+- Dos columnas de proyectos en escritorio y una en móvil. Si no hay proyectos reales, conservar el estado vacío en vez de inventar tarjetas.
+- Footer oscuro, enlaces de contacto en coral, foco visible y menú móvil desplegable.
 
 ## Prioridades de adaptación
 1. Jerarquía y legibilidad; las descripciones no deben quedar cortadas.

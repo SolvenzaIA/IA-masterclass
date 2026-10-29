@@ -3,12 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio personal" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio personal de Enrique, desarrollador interesado en arquitectura de software."
+    />
+    <meta name="theme-color" content="#f0edec" />
+    <title>Portfolio personal</title>
   </head>
   <body>
-    <!-- El script app.js generará aquí la estructura a partir de src/data/ -->
-    <div id="app">Hello World!</div>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="page-shell header-inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span data-brand>TN.</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Abrir menú"
+        >
+          <span class="menu-toggle-line"></span>
+          <span class="menu-toggle-line"></span>
+        </button>
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          aria-label="Navegación principal"
+        >
+          <a href="#competencias">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero page-shell" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-meta">
+            <span data-profile="profession"></span>
+            <span aria-hidden="true">·</span>
+            <span data-profile="location"></span>
+          </p>
+          <h1 id="hero-title" data-profile="headline"></h1>
+          <div class="hero-about" data-profile="about"></div>
+          <a class="button button-dark" href="#proyectos">Ver proyectos</a>
+        </div>
+        <figure class="hero-art">
+          <img
+            class="hero-portrait"
+            data-hero-portrait
+            alt="Retrato profesional de Enrique"
+            width="768"
+            height="960"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </figure>
+      </section>
+
+      <section
+        class="section page-shell projects-section"
+        id="proyectos"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Trabajo seleccionado</p>
+            <h2 id="projects-title">Proyectos</h2>
+          </div>
+          <p class="section-intro">
+            En esta sección aparecerán los proyectos cuando estén listos para compartir.
+          </p>
+        </div>
+        <div class="project-grid" data-projects></div>
+      </section>
+
+      <section
+        class="section skills-section"
+        id="competencias"
+        aria-labelledby="skills-title"
+      >
+        <div class="page-shell skills-layout">
+          <div>
+            <p class="eyebrow">Sobre mí</p>
+            <h2 id="skills-title">Competencias</h2>
+          </div>
+          <div>
+            <p class="skills-intro">
+              Áreas de interés y trabajo.
+            </p>
+            <ul class="skill-list" data-skills aria-label="Lista de competencias"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact-section page-shell"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-panel">
+          <p class="eyebrow">¿Hablamos?</p>
+          <h2 id="contact-title">Construyamos algo juntos.</h2>
+          <p class="contact-copy">
+            Puedes escribirme por email o conectar conmigo en LinkedIn.
+          </p>
+          <div class="contact-links" data-contact></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-inner">
+        <a class="brand footer-brand" href="#inicio" aria-label="Volver al inicio">
+          <span data-brand>TN.</span>
+        </a>
+        <p>© <span data-year></span> Enrique. Todos los derechos reservados.</p>
+        <a class="back-to-top" href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
 
     <script type="module" src="/src/app.js"></script>
   </body>
